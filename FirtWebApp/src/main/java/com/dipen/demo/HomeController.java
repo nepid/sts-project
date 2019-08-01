@@ -12,6 +12,7 @@ public class HomeController {
 //	public String homepage(HttpServletRequest req) {
 //		String name = req.getParameter("name");
 //		return home;
+//
 //	}
 	
 	
@@ -30,6 +31,8 @@ public class HomeController {
 	
 	@RequestMapping("profile")
 	public ModelAndView profilePage(Student st) {
+		
+		System.out.println("at profle controller");
 		
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("obj", st);
