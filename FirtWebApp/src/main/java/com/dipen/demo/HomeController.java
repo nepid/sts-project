@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
-	@RequestMapping("home")
+	
 	
 //	public String homepage(HttpServletRequest req) {
 //		String name = req.getParameter("name");
@@ -15,7 +15,7 @@ public class HomeController {
 //
 //	}
 	
-	
+	@RequestMapping("home")
 	public ModelAndView homepage(@RequestParam("name") String userName) {
 	
 		
